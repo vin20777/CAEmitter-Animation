@@ -12,6 +12,7 @@
 		B57B59331F6785BB00104084 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57B59311F6785BB00104084 /* Main.storyboard */; };
 		B57B59351F6785BB00104084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57B59341F6785BB00104084 /* Assets.xcassets */; };
 		B57B59381F6785BB00104084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57B59361F6785BB00104084 /* LaunchScreen.storyboard */; };
+		B57B59401F678C8A00104084 /* EmitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B593F1F678C8A00104084 /* EmitterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B57B59341F6785BB00104084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57B59371F6785BB00104084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B57B59391F6785BB00104084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57B593F1F678C8A00104084 /* EmitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmitterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				B57B592D1F6785BB00104084 /* AppDelegate.swift */,
 				B57B592F1F6785BB00104084 /* ViewController.swift */,
+				B57B593F1F678C8A00104084 /* EmitterViewController.swift */,
 				B57B59311F6785BB00104084 /* Main.storyboard */,
 				B57B59341F6785BB00104084 /* Assets.xcassets */,
 				B57B59361F6785BB00104084 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57B59301F6785BB00104084 /* ViewController.swift in Sources */,
+				B57B59401F678C8A00104084 /* EmitterViewController.swift in Sources */,
 				B57B592E1F6785BB00104084 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +208,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -248,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -261,6 +265,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FourSeason/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VTS.FourSeason;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +278,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FourSeason/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VTS.FourSeason;
 				PRODUCT_NAME = "$(TARGET_NAME)";

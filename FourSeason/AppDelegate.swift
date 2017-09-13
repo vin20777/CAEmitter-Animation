@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  FourSeason
 //
-//  Created by 曹宇廷16924 on 2017/9/12.
+//  Created by VTStudio on 2017/9/12.
 //  Copyright © 2017年 VTStudio. All rights reserved.
 //
 

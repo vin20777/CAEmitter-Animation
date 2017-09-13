@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gUv-2P-hui">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Jimmy-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FourSeason" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,126 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNS-gO-gcT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="150.5"/>
+                                <state key="normal" title="Spring" backgroundImage="Spring"/>
+                                <connections>
+                                    <segue destination="Cph-hN-PDk" kind="show" identifier="Spring" id="2fd-6g-A4g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbD-q2-p52">
+                                <rect key="frame" x="0.0" y="215.5" width="375" height="150.5"/>
+                                <state key="normal" title="Summer" backgroundImage="Summer"/>
+                                <connections>
+                                    <segue destination="Cph-hN-PDk" kind="show" identifier="Summer" id="dL0-YA-3Qi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbr-K1-esb">
+                                <rect key="frame" x="0.0" y="367" width="375" height="150"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Autumn" backgroundImage="Autumn">
+                                    <color key="titleColor" red="0.99215507510000001" green="0.99213957789999996" blue="0.9921588898" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cph-hN-PDk" kind="show" identifier="Autumn" id="37a-4Q-78N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGq-cq-FV2">
+                                <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Winter" backgroundImage="Winter">
+                                    <color key="titleColor" red="0.99215507510000001" green="0.99213957789999996" blue="0.9921588898" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cph-hN-PDk" kind="show" identifier="Winter" id="Dc5-ZO-35c"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HbD-q2-p52" secondAttribute="trailing" id="5Uw-K0-1X3"/>
+                            <constraint firstItem="HbD-q2-p52" firstAttribute="height" secondItem="uNS-gO-gcT" secondAttribute="height" id="91b-ot-7Ng"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XGq-cq-FV2" secondAttribute="bottom" id="A5A-BS-jXe"/>
+                            <constraint firstItem="uNS-gO-gcT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Foq-fP-CQK"/>
+                            <constraint firstItem="Nbr-K1-esb" firstAttribute="height" secondItem="uNS-gO-gcT" secondAttribute="height" id="KpC-0J-aiw"/>
+                            <constraint firstItem="HbD-q2-p52" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NEO-9H-gvh"/>
+                            <constraint firstAttribute="trailing" secondItem="uNS-gO-gcT" secondAttribute="trailing" id="SUE-WV-sAj"/>
+                            <constraint firstAttribute="trailing" secondItem="XGq-cq-FV2" secondAttribute="trailing" id="ZCh-bQ-ZIM"/>
+                            <constraint firstItem="uNS-gO-gcT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aBv-Cz-j1c"/>
+                            <constraint firstItem="Nbr-K1-esb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dMa-NM-TeL"/>
+                            <constraint firstItem="XGq-cq-FV2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e2O-DV-m5s"/>
+                            <constraint firstItem="HbD-q2-p52" firstAttribute="top" secondItem="uNS-gO-gcT" secondAttribute="bottom" constant="1" id="gaa-sf-XDu"/>
+                            <constraint firstItem="Nbr-K1-esb" firstAttribute="top" secondItem="HbD-q2-p52" secondAttribute="bottom" constant="1" id="iTo-V4-kIL"/>
+                            <constraint firstItem="XGq-cq-FV2" firstAttribute="top" secondItem="Nbr-K1-esb" secondAttribute="bottom" id="mbP-Nb-CG7"/>
+                            <constraint firstItem="XGq-cq-FV2" firstAttribute="height" secondItem="uNS-gO-gcT" secondAttribute="height" id="v1D-J6-6x1"/>
+                            <constraint firstAttribute="trailing" secondItem="Nbr-K1-esb" secondAttribute="trailing" id="yNJ-eK-40V"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Jimmy" id="OUc-iu-j3x"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="978" y="139"/>
+        </scene>
+        <!--Emitter View Controller-->
+        <scene sceneID="Mx4-Zf-zPu">
+            <objects>
+                <viewController id="Cph-hN-PDk" customClass="EmitterViewController" customModule="FourSeason" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZUp-9P-mzB"/>
+                        <viewControllerLayoutGuide type="bottom" id="KWj-0o-6VK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k0k-zL-SnP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hVX-eN-4ue">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9309736426188524" green="1" blue="0.93136934751049183" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="KWj-0o-6VK" firstAttribute="top" secondItem="hVX-eN-4ue" secondAttribute="bottom" id="1rn-Lt-6jr"/>
+                            <constraint firstAttribute="trailing" secondItem="hVX-eN-4ue" secondAttribute="trailing" id="SQm-Cl-sHn"/>
+                            <constraint firstItem="hVX-eN-4ue" firstAttribute="top" secondItem="ZUp-9P-mzB" secondAttribute="bottom" id="nkt-X9-a0I"/>
+                            <constraint firstItem="hVX-eN-4ue" firstAttribute="leading" secondItem="k0k-zL-SnP" secondAttribute="leading" id="us0-FJ-Ojd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="hVX-eN-4ue" id="pg4-Xt-loT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZi-tB-LOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dJP-Op-UiP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gUv-2P-hui" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z03-45-5LE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0B1-df-kUe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7w-Du-MWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Autumn" width="1600" height="1200"/>
+        <image name="Spring" width="1224" height="549"/>
+        <image name="Summer" width="480" height="272"/>
+        <image name="Winter" width="500" height="269"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="37a-4Q-78N"/>
+    </inferredMetricsTieBreakers>
 </document>
