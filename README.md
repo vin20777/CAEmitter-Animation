@@ -1,5 +1,5 @@
 # CAEmitter-animation-demo
-## Swift 3 CAEmitter animation Practice
+## Swift CAEmitter animation Practice
 
 ### Eazy to use in Swift 4
 
