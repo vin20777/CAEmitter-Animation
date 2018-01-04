@@ -31,6 +31,10 @@ class EmitterViewController: UIViewController {
         }
     }
     
+    deinit {
+        print("Flower Deinit")
+    }
+    
     func flowerBlossom() {
         
         let flowerLayer = CAEmitterLayer()
