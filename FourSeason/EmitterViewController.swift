@@ -31,17 +31,13 @@ class EmitterViewController: UIViewController {
         }
     }
     
-    deinit {
-        print("Flower Deinit")
-    }
-    
     func flowerBlossom() {
         
         let flowerLayer = CAEmitterLayer()
         flowerLayer.position = CGPoint(x: self.view.bounds.size.width / 2, y: -30)
         flowerLayer.emitterSize = CGSize(width: self.view.bounds.size.width, height: 0)
-        flowerLayer.emitterShape = kCAEmitterLayerLine
-        flowerLayer.emitterMode = kCAEmitterLayerOutline
+        flowerLayer.emitterShape = CAEmitterLayerEmitterShape.line
+        flowerLayer.emitterMode = CAEmitterLayerEmitterMode.outline
         
         let flowerCell = CAEmitterCell()
         flowerCell.contents = UIImage(named: "Sakura")!.cgImage
@@ -74,10 +70,10 @@ class EmitterViewController: UIViewController {
         
         let explosionLayer = CAEmitterLayer()
         explosionLayer.emitterPosition = CGPoint(x: self.view.bounds.size.width / 2, y: self.view.bounds.size.height / 2)
-        explosionLayer.emitterShape = kCAEmitterLayerCircle
-        explosionLayer.emitterMode = kCAEmitterLayerOutline
+        explosionLayer.emitterShape = CAEmitterLayerEmitterShape.circle
+        explosionLayer.emitterMode = CAEmitterLayerEmitterMode.outline
         explosionLayer.emitterSize = CGSize(width: 100, height: 0)
-        explosionLayer.renderMode = kCAEmitterLayerOldestLast
+        explosionLayer.renderMode = CAEmitterLayerRenderMode.oldestLast
         
         let bubble = CAEmitterCell()
         bubble.contents = UIImage(named: "Particle")!.cgImage
@@ -101,9 +97,9 @@ class EmitterViewController: UIViewController {
         let fireLayer = CAEmitterLayer()
         fireLayer.emitterPosition = CGPoint(x: self.view.bounds.size.width / 2, y: self.view.bounds.size.height)
         fireLayer.emitterSize = CGSize(width: self.view.bounds.size.width / 3, height: 0)
-        fireLayer.emitterMode = kCAEmitterLayerOutline
-        fireLayer.emitterShape = kCAEmitterLayerLine
-        fireLayer.renderMode = kCAEmitterLayerAdditive
+        fireLayer.emitterMode = CAEmitterLayerEmitterMode.outline
+        fireLayer.emitterShape = CAEmitterLayerEmitterShape.line
+        fireLayer.renderMode = CAEmitterLayerRenderMode.additive
         fireLayer.seed = (arc4random()%100)+1
         
         let rocket = CAEmitterCell()
@@ -158,8 +154,8 @@ class EmitterViewController: UIViewController {
         let snowLayer = CAEmitterLayer()
         snowLayer.position = CGPoint(x: self.view.bounds.size.width / 2, y: -30)
         snowLayer.emitterSize = CGSize(width: self.view.bounds.size.width * 2, height: 0)
-        snowLayer.emitterShape = kCAEmitterLayerLine
-        snowLayer.emitterMode = kCAEmitterLayerOutline
+        snowLayer.emitterShape = CAEmitterLayerEmitterShape.line
+        snowLayer.emitterMode = CAEmitterLayerEmitterMode.outline
         
         snowLayer.shadowColor = UIColor.white.cgColor
         snowLayer.shadowOffset = CGSize(width: 0.0, height: 1.0)
