@@ -1,7 +1,7 @@
 # CAEmitter-animation-demo
 ## Swift CAEmitter animation Practice
 
-### Eazy to use in Swift 4
+### Eazy to use in Swift 5
 
 [Jimmy 幾米](https://zh.wikipedia.org/wiki/%E5%B9%BE%E7%B1%B3) is a famous illustrator in Taiwan who drew lots of healing paintings.
 
